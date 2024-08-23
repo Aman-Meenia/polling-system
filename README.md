@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tech-Stack used
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+NextJs, Shadcn, Postgres, Prisma, recharts, Docker, Zod
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# How to run the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Add this to your `.env` file
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+DATABASE_URL="postgresql://admin:root@localhost:5432/test_db"
+```
 
-## Learn More
+###
 
-To learn more about Next.js, take a look at the following resources:
+## Run Nodejs app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run build
+```
 
-## Deploy on Vercel
+```
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Run Docker
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+docker-compose up --build -d
+```
+
+## Refrences
+
+- [Prisma](https://www.youtube.com/watch?v=_ER9jHiylAo&t=619s)
+- [Zod](https://github.com/colinhacks/zod)
+- [Docker Compose for Postgress and pgadmin](https://medium.com/@jewelski/quickly-set-up-a-local-postgres-database-using-docker-5098052a4726)
+- [Shadcn UI](https://ui.shadcn.com)
+- [rechart](https://www.youtube.com/watch?v=nSsTDx9rgwk&t=12s)
+- [rechart](https://www.youtube.com/watch?v=Fu_YFp-9xoQ&t=115s)
+- [postgresql](https://www.youtube.com/watch?v=cnzka7kF5Zk&t=27s)
+- [moment](https://momentjs.com/)
