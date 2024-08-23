@@ -18,7 +18,7 @@ const Header = () => {
             path !== "/" && router.push("/");
           }}
         >
-          Next-Auth
+          Polling-System
         </h1>
       </div>
       <div className="right self-end">
